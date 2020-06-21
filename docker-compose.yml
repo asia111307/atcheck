@@ -1,0 +1,12 @@
+version: '3.5'
+services:
+    atcheck:
+      image: atcheck_image
+      build: .
+      env_file: '.env'
+      ports:
+        - '8000:8000'
+      command: php artisan serve --host='0.0.0.0'
+      volumes:
+        - ./:/app   
+

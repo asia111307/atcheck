@@ -1,0 +1,96 @@
+.seat-chart-wrapper {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.preview-page-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    margin: 40px;
+}
+
+.preview-attendance-table {
+    width: 35%;
+}
+
+.seat-chart-wrapper {
+    width: 60%;
+}
+
+div.seatCharts-row {
+    height: 150px;
+    justify-content: center;
+    margin: 0 auto;
+    width: auto;
+}
+
+div.seatCharts-cell {
+    width: 140px;
+    height: 140px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: initial;
+}
+
+div.seatCharts-seat.available {
+    background-color: rgba(111,120,129, 0.7);
+}
+
+div.seatCharts-seat.taken {
+    background-color: #649a24;
+}
+
+.preview-name {
+    color: rgba(0,0,0,0.7);
+    word-wrap: break-word;
+    width: 90%;
+    font-weight: bold;
+}
+
+.checkout-button-preview {
+    display: flex;
+    justify-content: flex-start;
+    width: 40%;
+}
+
+.seat-p-preview {
+    justify-content: center;
+    width: 60%;
+    padding: 0 auto;
+}
+
+.front-indicator {
+    margin: 0 40px;
+}
+
+.scrollable-div {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+@media (max-width: 767px) {
+    .front-indicator {
+        flex-direction: column;
+    }
+    .seat-p-preview {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .seat-p {
+        margin: 0;
+    }
+
+    .preview-page-content {
+        flex-direction: column;
+    }
+
+    .preview-attendance-table, .seat-chart-wrapper {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
