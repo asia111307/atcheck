@@ -16,6 +16,7 @@
                             @endif
                             @section('user_content')
                                 <h4> Garść przydatnych informacji </h4>
+                                <br>
                                     <p> W zakładce <a href="{{ route('user_subjects') }}"> <b>Moje przedmioty</b> </a> znajdują się przedmioty, których jesteś prowadzącym.
                                     <br>Przedmioty możesz grupować i usuwać. Możesz także dodać nowy przedmiot. Nazwa przedmiotu musi być unikalna (w całym systemie).
                                 </p>
@@ -38,7 +39,7 @@
                                     <br> Rekordy dotyczące wszystkich obecności możesz grupować i wyeksportować. Przy eksporcie każda tabela-grupa trafi do pliku xlsx jako osobny arkusz.
                                 </p>
                                 <p>
-                                    <b> Z racji charakteru systemu, który bazuje na integracji z zewnętrznym czytnikiem i mapą sali, rekomendowane jest korzystanie z programu w trybie desktopowym, a nie mobilnym. </b>
+                                    <b> Z racji charakteru systemu, który bazuje na integracji z zewnętrznym czytnikiem i mapą sali, rekomendowane jest korzystanie z programu w trybie desktopowym, a nie mobilnym. Jednakże, niniejsza wersja demonstracyjna pozwala jedynie na rejestrację studentów w trybie manualnym, bez możliwości wykorzystania czytnika ELS</b>
                                 </p>
                             @endsection
                             @yield('user_content')
@@ -55,7 +56,13 @@
                         <div class="title">
                             @CHECK
                         </div>
-                        <h2>Witaj!</h2>
+                        <h2> Witaj! </h2>
+                        <p> To jest wersja demonstracyjna programu @CHECK.
+                        <br>
+                        <br> Możesz zobaczyć działanie systemu, logując się danymi testowego użytkownika:
+                            <br> <b>E-Mail:</b> jan@kowalski.com
+                            <br> <b>Hasło:</b> testuser
+                        </p>
                     </div>
                 </div>
             </div>

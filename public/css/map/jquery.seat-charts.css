@@ -103,7 +103,9 @@ span.seatCharts-legendDescription {
 	margin-left: 5px;
 	line-height: 100px;
 }
-
+.map-demo-info {
+	padding: 0 15%;
+}
 .front-indicator {
 	margin: 0;
 	background-color: #ececec;

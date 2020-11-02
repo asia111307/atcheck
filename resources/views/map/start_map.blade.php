@@ -20,6 +20,11 @@
         <div class="code-p"> Stan połączenia z serwerem legitymacji: <span id="status" style="color:green"> połączony</span></div>
 
         <h1 class="main-text main-seat-text">Przyłóż legitymację do czytnika</h1>
+        <div class="map-demo-info">
+            <h1><br><b>UWAGA!</b> Niniejsza wersja demonstracyjna pozwala jedynie na rejestrację studentów w trybie manualnym, bez możliwości wykorzystania czytnika ELS. Proszę zatem skorzystać z przycisku "Dodaj studenta ręcznie".</h1>
+            <p><br>W oryginalnej wersji w tym momencie należałoby podłączyć czytnik do legitymacji, uruchomić desktopową aplikację do odczytywania legitymacji, wprowadzić do niej kod weryfikacyjny i rozpocząć wprowadzanie legitymacji do czytnika.</p>
+        </div>
+
         @if ($errors->any())
             <div class="alert alert-danger invalid-feedback-alert">
                 <ul>
